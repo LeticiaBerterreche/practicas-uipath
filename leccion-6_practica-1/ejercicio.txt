@@ -1,0 +1,6 @@
+Ejercicio práctico
+Crear una secuencia para introducir datos en la página web Automation Challenge.
+
+    Primero, utilice FakeNameGenerator.com para generar datos aleatorios. Extraiga valores para Name, Phone number y Company name.
+    A continuación, escriba en el sitio web RPAChallenge.com los 3 valores en los campos First Name, Phone Number y Company Name.
+    Utilice UiExplorer para construir un selector fiable. Pruebe la actividad Anchor Base y la opción Select Relative element en UiExplorer para obtener el elemento de destino en referencia a su etiqueta.
