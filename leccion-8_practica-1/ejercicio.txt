@@ -1,0 +1,8 @@
+Ejercicio práctico
+Abrir una aplicación haciendo doble clic en varias resoluciones
+
+    Supongamos que tenemos un icono en el escritorio de una máquina remota. Representa un acceso directo a una aplicación
+
+    Debe diseñar un flujo de trabajo que abra la aplicación haciendo doble clic en el icono.
+
+    Utilice dos resoluciones distintas y también que el icono pueda estar seleccionado y tenga un aspecto distinto debido a la marca de agua digital. En nuestro ejemplo hemos utilizado un acceso directo a ExpenseIT
