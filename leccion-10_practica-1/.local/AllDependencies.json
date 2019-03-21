@@ -956,15 +956,15 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\maica\\.nuget\\packages\\": {}
+    "C:\\Users\\leticia_berterreche\\.nuget\\packages\\": {}
   },
   "project": {
     "restore": {
       "projectUniqueName": "leccion-10_practica-1",
       "projectName": "leccion-10_practica-1",
-      "projectPath": "C:\\Users\\maica\\git\\practicas-uipath\\leccion-10_practica-1\\.local",
-      "packagesPath": "C:\\Users\\maica\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\maica\\git\\practicas-uipath\\leccion-10_practica-1\\.local"
+      "projectPath": "C:\\Users\\leticia_berterreche\\Documents\\UiPath\\leccion-10_practica-1\\.local",
+      "packagesPath": "C:\\Users\\leticia_berterreche\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\leticia_berterreche\\Documents\\UiPath\\leccion-10_practica-1\\.local"
     },
     "frameworks": {
       "net461": {
