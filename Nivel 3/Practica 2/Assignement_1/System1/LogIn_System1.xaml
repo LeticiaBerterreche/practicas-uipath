@@ -8,7 +8,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>480,1128</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>480,926</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -57,10 +57,9 @@
       <AssemblyReference>UiPath.Excel</AssemblyReference>
       <AssemblyReference>UiPath.Mail</AssemblyReference>
       <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
-      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Login en aplicación web System 1 con la credencial recibida como parámetro. &#xA;&#xA;Precondición: ninguna&#xA;Postcondición: aplicación web System 1 abierta en un navegador y con sesión iniciada, siempre y cuando las credenciales sean correctas" DisplayName="Login" sap:VirtualizedContainerService.HintSize="440,846" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Login en aplicación web System 1 con la credencial recibida como parámetro. &#xA;&#xA;Precondición: ninguna&#xA;Postcondición: aplicación web System 1 abierta en un navegador y con sesión iniciada, siempre y cuando las credenciales sean correctas" DisplayName="Login en la aplicación System 1" sap:VirtualizedContainerService.HintSize="440,846" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="username" />
       <Variable x:TypeArguments="ss:SecureString" Name="password" />
