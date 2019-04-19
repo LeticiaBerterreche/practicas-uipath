@@ -1,0 +1,123 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="GetHashCode_Sha1Online" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="in_FormulaHash" Type="InArgument(x:String)" />
+    <x:Property Name="out_Hash" Type="OutArgument(x:String)" />
+  </x:Members>
+  <mva:VisualBasic.Settings>
+    <x:Null />
+  </mva:VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>476,1271</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap2010:Annotation.AnnotationText="Calcular el hash de un cliente&#xA;&#xA;Precondición: aplicación web para calcular el hash abierta en un navegador&#xA;&#xA;Postcondición: hash del cliente" DisplayName="Recuperar el valor del hash desde Sha1Online" sap:VirtualizedContainerService.HintSize="436,1191" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsAnnotationDocked">False</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="IE" DisplayName="Attach Browser Sha1 Online" sap:VirtualizedContainerService.HintSize="414,1067" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="01ac5b20ed42a799565dbce9039bd57f" Selector="&lt;html title='SHA1 online' /&gt;">
+      <ui:BrowserScope.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="336,921" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:MaximizeWindow Window="{x:Null}" DisplayName="Maximize Window" sap:VirtualizedContainerService.HintSize="314,22" sap2010:WorkflowViewState.IdRef="MaximizeWindow_1" />
+            <ui:TypeInto DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" ClickBeforeTyping="False" DisplayName="Type Formula Hash" EmptyField="True" sap:VirtualizedContainerService.HintSize="314,134" sap2010:WorkflowViewState.IdRef="TypeInto_1" SendWindowMessages="False" SimulateType="False" Text="[in_FormulaHash]">
+              <ui:TypeInto.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="1e1d9b0bd9a27b5d6a91a66d0f96bcb0" Selector="&lt;webctrl id='textToHashId' tag='INPUT' /&gt;" WaitForReady="INTERACTIVE" />
+              </ui:TypeInto.Target>
+            </ui:TypeInto>
+            <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click botón 'hash'" sap:VirtualizedContainerService.HintSize="314,106" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="True">
+              <ui:Click.CursorPosition>
+                <ui:CursorPosition Position="Center">
+                  <ui:CursorPosition.OffsetX>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetX>
+                  <ui:CursorPosition.OffsetY>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetY>
+                </ui:CursorPosition>
+              </ui:Click.CursorPosition>
+              <ui:Click.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="56fdaa575cce08d5844a8c5b76d975cd" Selector="&lt;webctrl tag='INPUT' type='submit' /&gt;" WaitForReady="INTERACTIVE" />
+              </ui:Click.Target>
+            </ui:Click>
+            <ui:ImageFound Found="{x:Null}" DisplayName="Image Exists Result for sha1" sap:VirtualizedContainerService.HintSize="314,106" sap2010:WorkflowViewState.IdRef="ImageFound_1">
+              <ui:ImageFound.Image>
+                <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAAKkAAAAdCAYAAADRjkxMAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAQtSURBVHhe7ZgLUWQxEEWxgAYs4AEJaMACDnCAAxSgAAMYwAEeZutszaXu3krnPYZf2OpT1TVDfp3uvslk9+zQNIvTIm2Wp0XaLE+LtFmeFmmzPC3SZnlapM3ytEib5WmRNsvzX4v06enpcHZ29mafxd3d3eHi4uKftZ+fn4+9a8Fetcerq6tj6+9iWjkPcGQE/fDwcBy9HjORejvj9lLl5D1rfCffLdLHx8dP9/chkcpub2+PM9biK0TqN+j9/f2xdV2+U6QI9PLy8tP97RapO3x9fT3c3Ny89WEvLy/H3nX4CpH6vN/Ad4i0usx+VKSQAshC80ZDyH7zcMpGtw8Cz7Hn5+d/ffp4/lY/e3PUjmkvI5FWCZVVzOb5Xkax8J1fGw63k/H4TZTxJazFGL+5MNZ0X75v+sjJ9fX1Wxvf8z1NzhlLDTRO80fPO/eR40dsaSf5NJH6TUog3pdGEQUJymSkCfagtiyij1fQuUeoEiqrmM3TXrZioc8F4fHkvIzPQYApzjTlwPdd7Y1D5Pi+RjZ73vnc1IzIumivFSeJFEFWbw/6lAw+tYEsoIrlQXGqdQOwDifaE+hjs4hqx+Qzk+F4+1aSnNk8vz05iMSSgvJceTyM94M+w+uCT83DFxcE62pvOVZ5z9x4LNSBeVqXT/bn4ys8Jo/VmfkesVuklbERCQsQlvryxHmgEpkHRTFJcrVpH6v5Qu2Y5mcyHG/fSpJTzUtfLriqbxbPDK8LB5+c48PrIHxsisYPFU+NLTQW8/gcjyn9ncqHREqQmRh/78xMAuZz1I8RZPXzuJpIM1eJ92neLJ4Z/t88adTEBTcTaeVfNzK1ZMzomVDlzNdMf6eyW6RymMXw9yX4JmfmAbDmKBEY7XtuHp+jBPLp7Y63VwkfUc3LvCTep3mzeLZAiH4Tpkmovi/POYz8k+vZurIqZ75m+juVd4sUfCOY/4vP56SAt+DWJLn5/tlT1NF4Pr3d8fYq4SOqeenrK3/uHdZifX6R/KBrvaqGMPLvuef5RT20X7VjVc58zfR3KieJlE17Qviun2X61I7xXlKQIBEqKZxaxvjPehZVCckE6qmR/5ug8bmO4+3434vPy0L5DcRe2R9WFc7blY898DOMKN0/OXb/Wq+qIYz8+3ON78oxdVM7lrGLKlYn61KtJU4SKeSmZ6IZmZIy6nOj2CKDk+VTQUHneKd6O2/hYzO5HLTci5sfZhiJZA8+b2Rei/eKNOtamcfuPirz+LIumcfkZJFC/qPHBcXJ5m8S5mP4m3kqFrcYa+fNTJs/IwRtujEYx1oURHMxBZ3JcJjD/twv627h642Sq7j9VuO79umMRLIHhMQhcx8Y67GO+5nVsPLvOcb4PrtJ3Udlvn7WZZRHZ/vqaJofpkXaLE+LtFmeFmmzPC3SZnlapM3iHA5/ABr4U5tDgp3LAAAAAElFTkSuQmCC" />
+              </ui:ImageFound.Image>
+              <ui:ImageFound.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" TimeoutMS="3000" WaitForReady="COMPLETE" />
+              </ui:ImageFound.Target>
+            </ui:ImageFound>
+            <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text Result for sha1" sap:VirtualizedContainerService.HintSize="314,106" sap2010:WorkflowViewState.IdRef="GetValue_1">
+              <ui:GetValue.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="871a0d88e0091747806adb1eed84ffe4" Selector="&lt;webctrl id='result-sha1' tag='SPAN' /&gt;" WaitForReady="INTERACTIVE" />
+              </ui:GetValue.Target>
+              <ui:GetValue.Value>
+                <OutArgument x:TypeArguments="x:String">[out_Hash]</OutArgument>
+              </ui:GetValue.Value>
+            </ui:GetValue>
+            <ui:MinimizeWindow Window="{x:Null}" DisplayName="Minimize Window" sap:VirtualizedContainerService.HintSize="314,22" sap2010:WorkflowViewState.IdRef="MinimizeWindow_1" />
+            <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="314,61" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[&quot;Hash: &quot; + out_Hash]" />
+          </Sequence>
+        </ActivityAction>
+      </ui:BrowserScope.Body>
+    </ui:BrowserScope>
+  </Sequence>
+</Activity>
