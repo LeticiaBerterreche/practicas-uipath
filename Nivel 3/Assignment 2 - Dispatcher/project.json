@@ -1,6 +1,6 @@
 {
-  "name": "Assignment 2 Level 3",
-  "description": "Assignment 2 Level 3",
+  "name": "Assignment 2 Level 3 - Dispatcher",
+  "description": "Assignment 2 Level 3 - Dispatcher",
   "main": "Main.xaml",
   "dependencies": {
     "UiPath.Credentials.Activities": "1.1.6479.13204",
